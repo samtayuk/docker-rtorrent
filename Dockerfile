@@ -8,7 +8,7 @@ ENV TERM=xterm
 # Download and install rtorrent
 RUN mkdir -p /app /data/torrents /data/watch /data/complete /data/.session && \
     apk --no-cache --no-progress add ca-certificates rtorrent && \
-    chmod +x /app/entrypoint.sh && \
+    chmod +x /app/entrypoint.sh
 
 EXPOSE 5000
 
